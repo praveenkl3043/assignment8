@@ -1,0 +1,78 @@
+
+1.Write a “person” class to hold all the details.
+
+code:
+
+class person {
+  constructor(name, age,height,qualification ) {
+    this.name = name;
+    this.age = age;
+    this.height = height;
+    this.qualification = qualification;
+  }
+
+  getpersondetails() {
+  let data=`
+  name :${this.name}
+  age :${this.age}
+  height:${this.height}
+  qualification:${this.qualification}
+  `
+  return data
+}
+     
+  
+
+  
+}
+let person1 = new person("saina",25,5.5,"b.tech cse")
+console.log(person1.getpersondetails())
+
+ans:
+ name :praveenkl  
+ age :22  
+ height :5.9  
+ qualification :b tech cse  
+
+
+2.
+
+code:
+
+   
+class uber {
+    constructor( name, charges,distance,cartype,amount ) {
+      this.name = name;
+      this.charges = charges;
+      this.distance =distance;
+      this.cartype=cartype;
+      this.amount = amount;
+    }
+  
+    getcustomerdetails() {
+    let data=`
+    passenger name :${this.name}
+    1km :${this.charges}
+    distance travelled:${this.distance}
+    car type:${this.cartype}
+    amount to be paid:${this.amount} 
+    `
+    return data
+  }
+       
+    
+  
+    
+  }
+  let customer = new uber("saina",10,"25km",premium,10*25)
+  console.log(customer.getcustomerdetails())
+  
+
+ans:
+  passenger name :saina
+    1km :10
+    distance travelled:25km
+    car type:premium
+    amount to be paid:250 
+    
+    
